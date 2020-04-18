@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <title>Mundo PC</title>
+    @Styles.Render("~/Content/styles.css")
+    @Styles.Render("~/Img/png")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header class="menu-mobil">
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="~/Img/menu.png" alt=""></label>
+        <nav class="menu">
+            <ul>
+                <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+                <li>@Html.ActionLink("Productos","productos","Home")</li>
+                <li>@Html.ActionLink("Mis compras", "mis_compras", "Home")</li>
+                <li>@Html.ActionLink("Carrito", "carrito", "Home")</li>
+                <li>@Html.ActionLink("Ingresar", "login", "Home")</li>
+                <li>@Html.ActionLink("Registro", "registro", "Home")</li>
+            </ul>
+        </nav>
+    </header><br />
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
