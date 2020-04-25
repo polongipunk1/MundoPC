@@ -1,94 +1,75 @@
 ﻿
-    <body class="fondo-login">
-
-        <div class="conten-tabla">
-            <table id="tabla-productos">
-                <tr>
-                    <th>ID</th>
-                    <th>PRODUCTO</th>
-                    <th>FORMA DE ENTREGA</th>
-                    <th>PRECIO</th>
-                    <th>CANTIDAD</th>
-                    <th>TOTAL</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Laptop acer <br><a href="#" title="Eliminar producto del carrito">Eliminar</a></td>
-                    <td>Entrega a domicilio</td>
-                    <td>9,000.00 <label for="">MX</label></td>
-                    <td>1</td>
-                    <td>9,000.00</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Laptop dell</td>
-                    <td>Entrega a domicilio</td>
-                    <td>9,000.00</td>
-                    <td>1</td>
-                    <td>9,000.00</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Laptop toshiba</td>
-                    <td>Entrega a domicilio</td>
-                    <td>9,000.00</td>
-                    <td>1</td>
-                    <td>9,000.00</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Laptop dell gamer</td>
-                    <td>Entrega a domicilio</td>
-                    <td>9,000.00</td>
-                    <td>1</td>
-                    <td>9,000.00</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>pc lenovo</td>
-                    <td>Entrega a domicilio</td>
-                    <td>9,000.00</td>
-                    <td>1</td>
-                    <td>9,000.00</td>
-                </tr>
-            </table>
-            <h3 id="total">90,000.00</h3>
-            <h3 id="tot">Total:</h3>
-            <form action="">
-                <button class="btn-comprar-carrito" type="submit" title="Finalizar compra"
-                        formaction="finalizar_compra.html">
-                    FINALIZAR COMPRA
-                </button>
-            </form>
-        </div>
-        <form class="form-register">
-            <h1>Datos de envío</h1>
-            <label for="email">*Email para confirmar el pedido:</label><br>
-            <input class="controls" type="email" id="email" name="fname" placeholder="Ingrese correo electronico" required><br>
-            <label for="nombre">*Nombre:</label><br>
-            <input class="controls" type="text" id="nombre" name="lname" placeholder="Ingrese nombre" required><br>
-            <label for="apellidos">*Apellidos:</label><br>
-            <input class="controls" type="text" id="apellidos" name="fname" placeholder="Ingrese apellidos" required><br>
-            <label for="direccion">*Dirección:</label><br>
-            <input class="controls" type="text" id="direccion" name="fname" placeholder="Ingrese dirección" required><br>
-            <label for="ciudad">*Ciudad:</label><br>
-            <input class="controls" type="text" id="ciudad" name="fname" placeholder="Ingrese su dirección" required><br>
-            <label for="region">*Región:</label><br>
-            <select class="controls" name="region">
-                <option class="controls" value="1">Ciudad de México</option>
-                <option class="controls" value="2">Estado de México</option>
-            </select><br>
-            <label for="cp">*Codigo Postal:</label><br>
-            <input class="controls" type="datetime" id="cp" name="fname" placeholder="Ingrese codigo postal" required><br>
-            <label for="telefono">*Telefono movil:</label><br>
-            <input class="controls" type="tel" id="telefono" name="Telefono" placeholder="10 digitos" required><br>
-            <p><b>Metodo de pago:</b> PayPal</p>
-            <p><b>Envio por:</b> Fedex</p>
-            <input class="botons" type="submit" value="COMPRAR" formaction="https://www.paypal.com/signin/">
+<body class="fondo-login">
+    <h1 class="carrito-encabezado">Carrito de compras</h1>
+    <div class="conten-tabla">
+        <table id="tabla-productos">
+            <tr>
+                <th>ID</th>
+                <th>PRODUCTO</th>
+                <th>DESCRPCIÓN</th>
+                <th>FORMA DE ENTREGA</th>
+                <th>PRECIO</th>
+                <th>CANTIDAD</th>
+                <th>TOTAL</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><img class="img-carrito" src="img/lap_acer.png" alt=""><br><a href="#" title="Eliminar producto del carrito">Eliminar</a></td>
+                <td>Laptop Acer Nitro 5</td>
+                <td>Entrega a domicilio</td>
+                <td>9,000.00 <label for="">MX</label></td>
+                <td>1</td>
+                <td>9,000.00</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><img class="img-carrito" src="img/lap_dell.png" alt=""><br><a href="#" title="Eliminar producto del carrito">Eliminar</a></td>
+                <td>Laptop Dell Vostro 3468</td>
+                <td>Entrega a domicilio</td>
+                <td>9,000.00</td>
+                <td>1</td>
+                <td>9,000.00</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><img class="img-carrito" src="img/lap_asus.png" alt=""><br><a href="#" title="Eliminar producto del carrito">Eliminar</a></td>
+                <td>Laptop Asus X540BA</td>
+                <td>Entrega a domicilio</td>
+                <td>9,000.00</td>
+                <td>1</td>
+                <td>9,000.00</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><img class="img-carrito" src="img/lap_toshiba.png" alt=""><br><a href="#" title="Eliminar producto del carrito">Eliminar</a></td>
+                <td>Laptop Toshiba Satellite NB-15</td>
+                <td>Entrega a domicilio</td>
+                <td>9,000.00</td>
+                <td>1</td>
+                <td>9,000.00</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><img class="img-carrito" src="img/pc_lenovo.png" alt=""><br><a href="#" title="Eliminar producto del carrito">Eliminar</a></td>
+                <td>PC All In One LenovoS200z</td>
+                <td>Entrega a domicilio</td>
+                <td>9,000.00</td>
+                <td>1</td>
+                <td>9,000.00</td>
+            </tr>
+        </table>
+        <h3 id="total">90,000.00</h3>
+        <h3 id="tot">Total:</h3>
+        <form action="">
+            <button class="btn-comprar-carrito" type="submit" title="Finalizar compra"
+                    formaction="finalizar_compra.html">
+                FINALIZAR COMPRA
+            </button>
         </form>
-        <footer class="footer">
-            <div>
-                <p>© 2020 Mundo PC. Todos los derechos reservados</p>
-            </div>
-        </footer>
-    </body>
+    </div>
+    <footer class="footer">
+        <div>
+            <p>© 2020 Mundo PC. Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
