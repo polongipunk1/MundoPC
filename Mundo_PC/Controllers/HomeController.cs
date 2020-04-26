@@ -46,5 +46,9 @@ namespace Mundo_PC.Controllers
         {
             return View();
         }
+        public ActionResult finalizar_compra()
+        {
+            return View();
+        }
     }
 }
