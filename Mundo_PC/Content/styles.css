@@ -121,11 +121,13 @@ header label {
     }
 
     .slider li {
+        margin-top: 0px;
         width: 100%;
         list-style: none;
     }
 
     .slider img {
+        margin-top:0px;
         width: 100%;
     }
 
