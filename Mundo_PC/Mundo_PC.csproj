@@ -194,6 +194,7 @@
     <Content Include="Views\Home\carrito.cshtml" />
     <Content Include="Views\Home\login.cshtml" />
     <Content Include="Views\Home\registro.cshtml" />
+    <Content Include="Views\Home\finalizar_compra.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
