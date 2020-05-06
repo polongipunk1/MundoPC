@@ -190,7 +190,6 @@ header label {
     margin-top: -50px;
     margin-bottom: 35px;
 }
-
     .user-img img {
         width: 100px;
         height: 100px;
@@ -333,30 +332,7 @@ button {
         background: rgba(0, 70, 94,.6);
         box-shadow: 7px 13px 37px #000;
     }
-/*---------------Lista de productos 1 para escritorio-------------------
-.lista-1 {
-    width: 100%;
-    overflow: hidden;
-}
-.lista-1 ul {
-    display: flex;
-    padding: 0;
-    width: 100%;
-}
-.lista-1 li {
-    list-style: none;
-    padding: 10px;
-    width: 100%
-}
-.lista-1 img {
-    width: 100%;
-    background: rgba(0, 70, 94,.6);
-    box-shadow:  7px 13px 37px #000;
-}
-.lista-1 p {
-    color: white;
-    position: absolute;
-}*/
+/*---------------Lista de productos 1 para escritorio-------------------*/
 .conten-padre {
     display: flex;
 }
@@ -583,7 +559,6 @@ img {
 .conten-tabla {
     margin-top: 5%;
     margin-left: 1%;
-    margin-right: 1%;
     margin-bottom: 0px;
     position: relative;
     overflow-x: auto;
@@ -673,7 +648,18 @@ img {
     margin-left: 210px;
     margin-bottom: 20px;
 }
-/*-----------------------Carrito de compras MOBIL-----------------*/
-
+/*-----------------------Finalizar compra-----------------*/
+.botons-pagar {
+    cursor: pointer;
+    width: 70%;
+    background: #1f53c5;
+    border-radius: 4px;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 17%;
+    box-shadow: 7px 13px 37px #000;
+}
 
 

@@ -8,20 +8,29 @@
                 <img src="~/img/avatar.png" alt="">
             </div>
             <h1>Registro</h1>
-            <input class="controls" type="text" name="Nombres" id="nombre" placeholder="Ingrese su nombre" required>
-            <input class="controls" type="text" name="Apellidos" id="apellido" placeholder="Ingrese sus apellidos" required>
-            <input class="controls" type="email" name="Correo" id="correo" placeholder="Ingrese su correo" required>
-            <input class="controls" type="text" name="Usuario" id="usr" placeholder="Ingrese su usuario" required>
-            <input class="controls" type="password" name="contraseña" id="pw" placeholder="Ingrese su contraseña" required>
-            <input class="controls" type="text" name="direccion" id="direccion" placeholder="Ingrese su direccion de donde vive" required>
+            <label for="nombre">*Nombre:</label><br>
+            <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+            <label for="apellidos">*Apellidos:</label><br>
+            <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese sus apellidos" required>
+            <label for="correo">*Correo electrónico:</label><br>
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su correo" required>
+            <label for="usr">*Usuario:</label><br>
+            <input class="controls" type="text" name="usr" id="usr" placeholder="Ingrese su usuario" required>
+            <label for="pw">*Contraseña:</label><br>
+            <input class="controls" type="password" name="pw" id="pw" placeholder="Ingrese su contraseña" required>
+            <label for="direccion">*Dirección donde vive:</label><br>
+            <input class="controls" type="text" name="direccion" id="direccion" placeholder="Ingrese su dirección de donde vive" required>
+            <label for="colonia">*Colonia:</label><br>
             <input class="controls" type="text" name="colonia" id="colonia" placeholder="Ingrese su colonia" required>
             <label for="region">*Región:</label>
-            <select class="controls" name="region">
+            <select class="controls" name="region" id="region">
                 <option class="controls" value="1">Ciudad de México</option>
                 <option class="controls" value="2">Estado de México</option>
             </select>
-            <input class="controls" type="text" id="cp" name="cp" placeholder="Ingrese su codigo postal" required pattern="[0-9]+">
-            <input class="controls" type="tel" id="telefono" name="telefono" placeholder="Ingrese su numero telefonico" required pattern="[0-9]+">
+            <label for="cp">*Código Postal:</label><br>
+            <input class="controls" type="text" id="cp" name="cp" placeholder="Ejemplo: 05320" required pattern="[0-9]+" maxlength="5">
+            <label for="telefono">*Teléfono movil:</label><br>
+            <input class="controls" type="tel" id="telefono" name="telefono" placeholder="10 digitos" required pattern="[0-9]+" maxlength="10">
             <input class="botons" type="submit" value="Registrar" formaction="login">
         </form>
         <footer class="footer">

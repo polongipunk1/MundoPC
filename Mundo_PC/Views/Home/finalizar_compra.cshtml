@@ -1,34 +1,38 @@
 ﻿@{
 }
 
-<body class="fondo-login">
-    <form class="form-register">
-        <h1>Datos de envío</h1>
-        <label for="nombre">*Nombre:</label><br>
-        <input class="controls" type="text" id="nombre" name="nombre" placeholder="Ingrese nombre" required><br>
-        <label for="apellidos">*Apellidos:</label><br>
-        <input class="controls" type="text" id="apellidos" name="apellidos" placeholder="Ingrese apellidos" required><br>
-        <label for="email">*Email para confirmar el pedido:</label><br>
-        <input class="controls" type="email" id="email" name="email" placeholder="Ingrese correo electronico" required><br>
-        <label for="direccion">*Dirección donde vive:</label><br>
-        <input class="controls" type="text" id="direccion" name="direccion" placeholder="Ingrese dirección donde vive" required><br>
-        <label for="ciudad">*Colonia:</label><br>
-        <input class="controls" type="text" id="colonia" name="colonia" placeholder="Ingrese su colonia" required><br>
-        <label for="region">*Región:</label><br>
-        <select class="controls" name="region">
-            <option class="controls" value="1">Ciudad de México</option>
-            <option class="controls" value="2">Estado de México</option>
-        </select><br>
-        <label for="cp">*Codigo Postal:</label><br>
-        <input class="controls" type="datetime" id="cp" name="cp" placeholder="Ingrese codigo postal" required pattern="[0-9]+"><br>
-        <label for="telefono">*Telefono movil:</label><br>
-        <input class="controls" type="tel" id="telefono" name="telefono" placeholder="10 digitos" required pattern="[0-9]+"><br>
-        <h1>Detalle</h1>
-        <p><b><u>Productos:</u></b> Laptop Acer Nitro 5</p>
-        <p><b><u>Total:</u></b> 24,000.00 MX</p>
-        <p><b><u>Costo de Envio:</u></b> 200.00 MX</p>
-        <p><b><u>Metodo de pago:</u></b> PayPal</p>
-        <input class="botons" type="submit" value="FINALIZAR COMPRA" formaction="https://www.paypal.com/signin/">
-    </form>
-
-</body>
+    <body class="fondo-login">
+        <form class="form-register">
+            <h1>Datos de envío</h1>
+            <label for="nombre">*Nombre:</label><br>
+            <input class="controls" type="text" id="nombre" name="nombre" placeholder="Ingrese nombre" required><br>
+            <label for="apellidos">*Apellidos:</label><br>
+            <input class="controls" type="text" id="apellidos" name="apellidos" placeholder="Ingrese apellidos" required><br>
+            <label for="correo">*Email para confirmar el pedido:</label><br>
+            <input class="controls" type="email" id="correo" name="correo" placeholder="Ingrese correo electronico" required><br>
+            <label for="direccion">*Dirección donde vive:</label><br>
+            <input class="controls" type="text" id="direccion" name="direccion" placeholder="Ingrese dirección donde vive" required><br>
+            <label for="colonia">*Colonia:</label><br>
+            <input class="controls" type="text" id="colonia" name="colonia" placeholder="Ingrese su colonia" required><br>
+            <label for="region">*Región:</label><br>
+            <select class="controls" name="region" id="region">
+                <option class="controls" value="1">Ciudad de México</option>
+                <option class="controls" value="2">Estado de México</option>
+            </select><br>
+            <label for="cp">*Código Postal:</label><br>
+            <input class="controls" type="datetime" id="cp" name="cp" placeholder="Ejemplo: 05320" required pattern="[0-9]+" maxlength="5"><br>
+            <label for="telefono">*Teléfono movil:</label><br>
+            <input class="controls" type="tel" id="telefono" name="telefono" placeholder="10 digitos" required pattern="[0-9]+" maxlength="10"><br>
+            <h1>Detalle</h1>
+            <p><b><u>Productos:</u></b> Laptop Acer Nitro 5</p>
+            <p><b><u>Total:</u></b> 24,000.00 MX</p>
+            <p><b><u>Costo de Envio:</u></b> 200.00 MX</p>
+            <p><b><u>Método de pago:</u></b> PayPal</p>
+            <input class="botons-pagar" type="submit" value="FINALIZAR COMPRA" formaction="https://www.paypal.com/signin/">
+        </form>
+        <footer class="footer">
+            <div>
+                <p>© 2020 Mundo PC. Todos los derechos reservados</p>
+            </div>
+        </footer>
+    </body>
