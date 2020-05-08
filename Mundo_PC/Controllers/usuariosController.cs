@@ -53,7 +53,7 @@ namespace Mundo_PC.Controllers
             {
                 db.usuarios.Add(usuarios);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("login","Home");
             }
 
             return View(usuarios);
