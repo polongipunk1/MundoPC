@@ -16,8 +16,8 @@ namespace Mundo_PC.Models
         public string direccion { get; set; }
         public string colonia { get; set; }
         public string region { get; set; }
-        public int cp {get; set;}
-        public int telefono {get; set;}
+        public string cp {get; set;}
+        public string telefono {get; set;}
     }
 
 }

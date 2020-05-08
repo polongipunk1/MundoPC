@@ -37,7 +37,7 @@
             @Html.EditorFor(model => model.apellidos, new { htmlAttributes = new { @class = "controls", @placeholder = "Ingrese sus apellidos", required = "" } })
             @Html.ValidationMessageFor(model => model.apellidos, "", new { @class = "text-danger" })
             <label for="correo">*Correo electrónico:</label><br>
-            @Html.EditorFor(model => model.correo, new { htmlAttributes = new { @class = "controls", @placeholder = "ejemplo@gmail.com", required = "" } })
+            @Html.EditorFor(model => model.correo, new { htmlAttributes = new { @class = "controls", @placeholder = "ejemplo@gmail.com", type = "email", required = "" } })
             @Html.ValidationMessageFor(model => model.correo, "", new { @class = "text-danger" })
             <label for="usr">*Usuario:</label><br>
             @Html.EditorFor(model => model.usuario, new { htmlAttributes = new { @class = "controls", @placeholder = "Ingrese usuario", required = "" } })
@@ -52,12 +52,12 @@
             @Html.EditorFor(model => model.colonia, new { htmlAttributes = new { @class = "controls", placeholder = "Ingrese su colonia", required = "" } })
             @Html.ValidationMessageFor(model => model.colonia, "", new { @class = "text-danger" })
             <label for="region">*Región:</label>
-            @Html.DropDownList("region",listado, new { @class="controls"})
+            @Html.DropDownList("region", listado, new { @class = "controls" })
             <label for="cp">*Código Postal:</label><br>
             @Html.EditorFor(model => model.cp, new { htmlAttributes = new { @class = "controls", placeholder = "Ejemplo: 05320", pattern = "[0-9]+", MaxLength = "5", MinLength = "5", required = "" } })
             @Html.ValidationMessageFor(model => model.cp, "", new { @class = "text-danger" })
             <label for="telefono">*Teléfono movil:</label><br>
-            @Html.EditorFor(model => model.telefono, new { htmlAttributes = new { @class = "controls", placeholder = "10 digitos", pattern = "[0-9]+", MaxLength = "10", MinLength = "10", required = "" } })
+            @Html.EditorFor(model => model.telefono, new { htmlAttributes = new { @class = "controls", placeholder = "10 digitos", type="text", pattern = "[0-9]+", MaxLength = "10",  MinLength = "10", required = "" } })
             @Html.ValidationMessageFor(model => model.telefono, "", new { @class = "text-danger" })
             <input type="submit" value="Registrar" class="botons" formaction="Create" />
         </div>
@@ -67,7 +67,5 @@
                 <p>© 2020 Mundo PC. Todos los derechos reservados</p>
             </div>
         </footer>
-        @section Scripts {
-            @Scripts.Render("~/bundles/jqueryval")
-        }
+       
     </body>
